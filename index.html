@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CampusConnect student portal demo for ABES Engineering College">
+  <title>CampusConnect | Student Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/auth.js" defer></script>
+</head>
+<body class="login-body">
+  <main class="login-layout">
+    <section class="login-showcase">
+      <div class="brand brand-light"><span class="brand-mark">C</span><span>Campus<span class="brand-accent">Connect</span></span></div>
+      <div class="showcase-copy">
+        <span class="eyebrow light-eyebrow">YOUR CAMPUS. ONE PLACE.</span>
+        <h1>Make every<br>campus day<br><em>count.</em></h1>
+        <p>Your classes, attendance, assignments and campus updates — thoughtfully organized in one student space.</p>
+      </div>
+      <div class="showcase-bottom"><span class="pulse-dot"></span> Student portal demo · ABES Engineering College</div>
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    </section>
+    <section class="login-panel">
+      <div class="login-card">
+        <div class="mobile-brand brand"><span class="brand-mark">C</span><span>Campus<span class="brand-accent">Connect</span></span></div>
+        <span class="eyebrow">WELCOME BACK</span>
+        <h2>Sign in to your<br>student account</h2>
+        <p class="muted">Enter your college credentials to continue.</p>
+        <form id="loginForm" class="login-form">
+          <label for="email">College email</label>
+          <input id="email" type="email" autocomplete="username" placeholder="student@abes.ac.in" required>
+          <label for="password">Password</label>
+          <div class="password-wrap"><input id="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button type="button" class="password-toggle" id="togglePassword" aria-label="Show password">Show</button></div>
+          <div class="form-row"><label class="check-label"><input type="checkbox" id="remember"> Remember me</label><span class="small-note">Demo environment</span></div>
+          <p id="loginError" class="error-message" role="alert"></p>
+          <button class="btn btn-primary btn-full" type="submit">Sign in <span>→</span></button>
+        </form>
+        <div class="demo-box"><strong>Try the demo</strong><div><span>Email</span><code>student@abes.ac.in</code></div><div><span>Password</span><code>student123</code></div></div>
+        <p class="login-foot">By continuing, you agree to the demo portal's terms of use.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

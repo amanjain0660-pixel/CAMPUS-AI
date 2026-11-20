@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CampusConnect student portal demo">
+  <title>Examinations | CampusConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="examinations">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand sidebar-brand" href="dashboard.html"><span class="brand-mark">C</span><span>Campus<span class="brand-accent">Connect</span></span></a>
+      <div class="college-switch"><div class="college-avatar">A</div><div><strong>ABES Engineering</strong><small>Ghaziabad, Uttar Pradesh</small></div><span class="switch-chevron">⌄</span></div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="main-nav"><a class="nav-link" href="dashboard.html" data-nav="dashboard"><span class="nav-icon">▦</span><span>Overview</span></a>
+<a class="nav-link" href="timetable.html" data-nav="timetable"><span class="nav-icon">▤</span><span>Timetable</span></a>
+<a class="nav-link" href="attendance.html" data-nav="attendance"><span class="nav-icon">◷</span><span>Attendance</span></a>
+<a class="nav-link" href="subjects.html" data-nav="subjects"><span class="nav-icon">▣</span><span>My subjects</span></a>
+<a class="nav-link" href="assignments.html" data-nav="assignments"><span class="nav-icon">☷</span><span>Assignments</span><span class='nav-count'>3</span></a>
+<a class="nav-link" href="examinations.html" data-nav="examinations"><span class="nav-icon">◇</span><span>Examinations</span></a>
+<a class="nav-link" href="announcements.html" data-nav="announcements"><span class="nav-icon">◉</span><span>Announcements</span></a>
+<a class="nav-link" href="faculty.html" data-nav="faculty"><span class="nav-icon">♙</span><span>Faculty directory</span></a>
+<a class="nav-link" href="events.html" data-nav="events"><span class="nav-icon">✳</span><span>Events</span></a></nav>
+      <div class="nav-label personal-label">PERSONAL</div>
+      <nav class="main-nav"><a class="nav-link" href="profile.html" data-nav="profile"><span class="nav-icon">♙</span><span>My profile</span></a><a class="nav-link" href="settings.html" data-nav="settings"><span class="nav-icon">⚙</span><span>Settings</span></a></nav>
+      <div class="sidebar-help"><div class="help-icon">✦</div><strong>Need a hand?</strong><p>Find answers to common student questions.</p><a href="announcements.html">Visit help centre <span>↗</span></a></div>
+      <div class="sidebar-user"><div class="avatar avatar-small">RS</div><div class="user-meta"><strong>Rahul Sharma</strong><small>Student · CSE-A</small></div><button class="icon-button logout-button" title="Log out" aria-label="Log out">↗</button></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="menuToggle" aria-label="Open menu">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> <strong>Examinations</strong></div>
+        <div class="top-actions">
+          <label class="global-search"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search anything..."><kbd>⌘ K</kbd></label>
+          <button class="icon-button notification-button" id="notificationToggle" aria-label="Notifications">♧<i></i></button>
+          <div class="top-avatar">RS</div>
+        </div>
+      </header>
+      <section class="page-content">
+        <div class="page-heading"><div><div class="eyebrow">ABES ENGINEERING COLLEGE <span class="heading-dot">•</span> 2026–27</div><h1>Examinations</h1><p>Prepare for what’s coming next</p></div><div class="heading-date" id="todayDate"></div></div>
+        <div id="pageContent" class="content-mount"></div>
+        <footer class="app-footer"><span>© 2026 CampusConnect</span><span>Made for better campus days <b>✦</b></span><span class="demo-disclaimer">DEMO DATA · NOT AN OFFICIAL COLLEGE PORTAL</span></footer>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="notification-popover" id="notificationPopover"><strong>Notifications</strong><p><b>Assignment due soon</b><br><span>DBMS assignment is due tomorrow.</span></p><p><b>New campus notice</b><br><span>Library hours updated for this week.</span></p><a href="announcements.html">View all announcements →</a></div>
+</body>
+</html>

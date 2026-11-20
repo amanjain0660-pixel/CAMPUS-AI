@@ -1,0 +1,16 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Local environment files
+.env
+.env.*
+
+# Build output (if added later)
+dist/
+build/
